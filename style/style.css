@@ -1,0 +1,81 @@
+div{
+	border:2px solid red;
+}
+
+#lagname{
+	text-align: center;
+	
+}
+
+@media only screen and (max-width:770px ) {
+	#lagname{
+		margin-left: 100px;
+	}
+}
+
+#name ul li{
+	float: left;
+	margin-left: 100px;
+}
+
+.blockput{
+	width: 152px;
+	height: 100px;
+	background-color: #C93F22;
+	color:white;
+	font-size: 25px;
+	text-align: center;
+	
+}
+
+@media only screen and (max-width:770px ) {
+	.slider{
+		margin-left: 200px;
+	}
+
+	.slider img{
+		width: 500px
+	}
+}
+
+@media only screen and (max-width:990px ) {
+	#putevka{
+		width: 200px;
+	}
+}
+
+
+#news,
+#title{
+	height: 350px;
+}
+
+@media only screen and (max-width:1200px ) {
+	#img1{
+		height: 100px;
+		width: 100px;
+	}
+
+	.blockput{
+		width: 140px;
+	}
+}
+
+#footer{
+	height: 180px;
+}
+
+#bestpio h2 {
+	font-family: Cuprum, sans-serif;
+	color: white;
+}
+
+#title > h1 {
+	font-family: font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+}
+
+#title ul li { 
+	padding-bottom: 35px; 
+
+}
