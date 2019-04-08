@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/normalize.css">
@@ -11,20 +10,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-color: #80b3ff;">
 	<div class="container">
 		<div class="row">
-				<div class="col-xl-2 col-lg-2 col-sm-2 col-2">
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-4" id="logo">
 					<img src="img/logo.jpg" alt="" style="width: 150px; height: 150px" >
 				</div>
-				<div class="col-xl-10 col-lg-10 col-sm-7 col-10" id="name">
+				<div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-8" id="name">
 					<h1 id="lagname">Детский оздоровительный лагерь "Совёнок"</h1>
 					<ul>
 						<li><a href="#">Главная</a></li>
-						<li><a href="#">menu</a></li>
-						<li><a href="#">menu</a></li>
+						<li><a href="#">О лагере</a></li>
 						<li><a href="contact.html">Контакты</a></li>
-						<li><a href="#">menu</a></li>
+						<li><a href="#">Краткий экскурс</a></li>
 					</ul>
 				</div>
 		</div>
@@ -34,22 +32,22 @@
 				<div class="blockput"><p>Заказать путевку!</p></div>
 			</div>
 			<div class="col-xl-10 col-lg-10 col-sm-8 col-8" id="slider">
-				<div class="slider">
+				<div class="slider" id="slider1">
 					 <div>
 					 	<img src="img/slide.jpg"
-					 	style="height: 500px; width: 950px">
+					 	style="height: 500px">
 					 </div>
     				<div>
 					 	<img src="img/slide2.jpg"
-					 	style="height: 500px; width: 950px">
+					 	style="height: 500px">
 					 </div>
 					 <div>
 					 	<img src="img/slide3.jpeg"
-					 	style="height: 500px; width: 950px">
+					 	style="height: 500px">
 					 </div>
 					 <div>
 					 	<img src="img/slide4.jpg"
-					 	style="height: 500px; width: 950px">
+					 	style="height: 500px">
 					 </div> 
 			</div>
 		</div>
@@ -57,7 +55,7 @@
 
 		<div class="row">
 			<div class="col-xl-9 col-lg-9 col-sm-7 col-8" id="news">
-			<div class="slider">
+			<div class="slider" id="slider2">
 				<h2 style="text-align: center;"> Лучшие пионерки! <img src="img/1498109621164447544.jpg" alt="#" style="width: 400px; height: 330px; float: left;" id="img1">
 					<p style="font-size: 20px;"> 
 						За активное участие в жизни 
@@ -73,6 +71,18 @@
 			</div>
 
 			</div>
+
+			<div class="col-xl-9 col-lg-9 col-sm-7 col-8" id="newsshort">
+				<p>01.06.19</p>
+				<h3 style="text-align: center;">Добро пожаловать!</h3>
+				<p>15.06.19</p>
+				<h3 style="text-align: center;"> Лучшие пионерки!</h3>
+				<p>17.06.19</p>
+				<h3 style="text-align: center;"> Вперед за новыми впечатлениями!</h3>
+				<p>21.06.19</p>
+				<h3 style="text-align: center;"> Закрытие лагерной смены</h3>
+			</div>
+			
 			<div class="col-xl-3 col-lg-3 col-sm-5 col-4" id="title">
 				<h1>Пресс-релизы</h1>
 				<ul>
@@ -84,8 +94,20 @@
 				</ul>
 			</div>
 		</div>
-		
-		<div class="col-xl-12 col-lg-12 col-sm-12 col-12" id="footer"></div>
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-sm-12 col-12" id="footer">
+				<p>
+					г. Москва , Каширское шоссе, д. 31, корпус "К", комната 507
+				</p>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О лагере</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Краткий экскурс</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
