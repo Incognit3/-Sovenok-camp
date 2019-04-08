@@ -7,10 +7,13 @@ div{
 	
 }
 
-@media only screen and (max-width:770px ) {
-	#lagname{
-		margin-left: 100px;
-	}
+#logo{
+	background-color: #f5f5f0;
+}
+
+
+#name{
+	background-color: #b3d9ff;
 }
 
 #name ul li{
@@ -19,7 +22,7 @@ div{
 }
 
 .blockput{
-	width: 152px;
+	width: 150px;
 	height: 100px;
 	background-color: #C93F22;
 	color:white;
@@ -28,7 +31,30 @@ div{
 	
 }
 
+#slider{
+	background-color: #ebebe0;
+}
+
+#newsshort{
+		display: none;
+	}	
+
 @media only screen and (max-width:770px ) {
+	#lagname{
+		margin-left: 100px;
+	}
+
+	#name>h1{
+		font-size: 20px;
+		margin-right: 25%;
+	}
+	#name ul li a{
+		font-size: 15px;
+		float: left;
+		position: absolute;
+		margin-right: 5%;
+	}
+
 	.slider{
 		margin-left: 200px;
 	}
@@ -40,10 +66,32 @@ div{
 	#slider1 img{
 		margin-left: 35%;
 	}
-	#slider2 img{
-		margin-left: 23%;
+
+	#news{
+		display: none;	}
+
+	#newsshort{
+		display: block;
+	}		
+
+	#newsshort h3{
+		margin-top: 5%;
+		padding-top: 5%; 
 	}
+
+	#newsshort p{
+		position: absolute;
+		padding-top: 5%;
+		font-size: 10px;
+		color:grey;
+	}
+
 }
+
+#putevka{
+		background-color: #3366cc;
+	}
+
 
 @media only screen and (max-width:990px ) {
 	#putevka{
@@ -57,6 +105,10 @@ div{
 	height: 350px;
 }
 
+#news{
+	background-color: #ebebe0;
+}
+
 @media only screen and (max-width:1200px ) {
 	#img1{
 		height: 100px;
@@ -68,13 +120,14 @@ div{
 	}
 }
 
-#footer{
-	height: 180px;
-}
 
 #bestpio h2 {
 	font-family: Cuprum, sans-serif;
 	color: white;
+}
+
+#title{
+	background-color: #3366cc;
 }
 
 #title > h1 {
@@ -83,6 +136,21 @@ div{
 }
 
 #title ul li { 
-	padding-bottom: 35px; 
+	padding-bottom: 25px; 
 
+}
+#footer{
+	height: 180px;
+	background-color: #b3d9ff;
+}
+
+#footer p{
+	width: 20%;
+	float: left;
+}
+
+#footer ul li{
+	margin-left: 10%;
+	float: left;
+	margin-right: 2%;
 }
