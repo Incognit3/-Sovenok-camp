@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<test>&lang=ru_RU" type="text/javascript">
+    </script>
 
 </head>
 <body style="background-color: #80b3ff;">
@@ -20,7 +22,7 @@
 					<h1 id="lagname">Детский оздоровительный лагерь "Совёнок"</h1>
 					<ul>
 						<div><li><a href="index.html">Главная</a></li></div>
-						<div><li><a href="#">О лагере</a></li></div>
+						<div><li><a href="lager.html">О лагере</a></li></div>
 						<div><li><a href="contact.html">Контакты</a></li></div>
 						<div><li><a href="#">Краткий экскурс</a></li></div>
 					</ul>
@@ -36,6 +38,10 @@
 					<input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
 					<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
 					<textarea id="msg" class="txtarea" name="mess" placeholder="Ваше сообщение:"></textarea>
+					<!-- добавление элемента div -->
+					<div class="g-recaptcha" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div>
+					<!-- элемент для вывода ошибок -->
+					<div class="text-danger" id="recaptchaError"></div>
 					<button id="send" name="submit">Отправить</button>
 				</form>		
 			</div>
@@ -45,8 +51,7 @@
 		<div class="col-xl-12 col-lg-12 col-sm-12 col-12" id="foot">
 		<br>
     	<footer id="myFooter">
-     		<iframe id="map-container" frameborder="0" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72344.38745845744!2d54.376904602487436!3d55.484243984554936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43de4d88d45e572f%3A0x515ac8ec09abe0e9!2z0J7RgNC70LXQvdC-0Log0J_QuNC-0L3QtdGA0YHQutC40Lkg0JvQsNCz0LXRgNGM!5e0!3m2!1sru!2sru!4v1554764789628!5m2!1sru!2sru">
-     		</iframe>
+     		<div id="map" style="width: 100%; height: 400px"></div>
 		
 		<div class="social-networks">
      		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -62,6 +67,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="script/script.js"></script>	
