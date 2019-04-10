@@ -10,43 +10,39 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
-<body>
-	<div class="container">
+<body style="background-color: #80b3ff;">
+	<div class="container" >
 		<div class="row">
-				<div class="col-xl-2 col-lg-2 col-sm-2 col-2">
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-4" id="logo">
 					<img src="img/logo.jpg" alt="" style="width: 150px; height: 150px" >
 				</div>
-				<div class="col-xl-10 col-lg-10 col-sm-7 col-10" id="name">
+				<div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-8" id="name">
 					<h1 id="lagname">Детский оздоровительный лагерь "Совёнок"</h1>
 					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="#">О лагере</a></li>
-						<li><a href="contact.html">Контакты</a></li>
-						<li><a href="#">Краткий экскурс</a></li>
+						<div><li><a href="index.html">Главная</a></li></div>
+						<div><li><a href="#">О лагере</a></li></div>
+						<div><li><a href="contact.html">Контакты</a></li></div>
+						<div><li><a href="#">Краткий экскурс</a></li></div>
 					</ul>
 				</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-2 col-lg-2 col-sm-4 col-4" id="putevka">
-				<div class="blockput"><p>Заказать путевку!</p>
-			</div>
-		</div>
-
-		<div class="col-xl-10 col-lg-10 col-sm-8 col-8" id="form">
+		<div class="col-xl-12 col-lg-12 col-sm-12 col-12" id="putevka">
 		<br>
 			<div id="inline">
 			<h2>Онлайн заявка</h2>
-				<form id="contact" action="#" method="post" name="contact">
+				<form id="contact" action="php/process.php" method="post" name="contact">
 					<input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
 					<input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
 					<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
-					<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
-					<button id="send">Отправить</button>
+					<textarea id="msg" class="txtarea" name="mess" placeholder="Ваше сообщение:"></textarea>
+					<button id="send" name="submit">Отправить</button>
 				</form>		
 			</div>
+		</div>
 		</div>	
-		
-		<div class="col-xl-10 col-lg-10 col-sm-10 col-8" id="foot">
+		<div class="row">
+		<div class="col-xl-12 col-lg-12 col-sm-12 col-12" id="foot">
 		<br>
     	<footer id="myFooter">
      		<iframe id="map-container" frameborder="0" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72344.38745845744!2d54.376904602487436!3d55.484243984554936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43de4d88d45e572f%3A0x515ac8ec09abe0e9!2z0J7RgNC70LXQvdC-0Log0J_QuNC-0L3QtdGA0YHQutC40Lkg0JvQsNCz0LXRgNGM!5e0!3m2!1sru!2sru!4v1554764789628!5m2!1sru!2sru">
@@ -61,7 +57,9 @@
             <p>© 2019 Copyright Text </p>
         </div>
 	</footer>
-
+	</div>
+	</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
